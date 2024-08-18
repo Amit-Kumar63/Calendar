@@ -102,6 +102,7 @@ const Calendar = () => {
         <span className='bg-black w-full px-5 py-2 bg-opacity-[50%]'>{getEvent? getEvent: "No Event" }</span>           
         <button className='bg-red-600 px-5 py-1 rounded-lg' onClick={()=> { getEvent && localStorage.removeItem(fullDate); setGetEvent('') }}>DELETE</button>            
       </div>
+
     </div>
   )
 }
