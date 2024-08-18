@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation} from 'react-router-dom'
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date())
@@ -38,10 +38,6 @@ const Calendar = () => {
   const dayName = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
   const handleDateClick = (date) => {
     setSelectedDate(date)
-  }
-  // Show event
-  const handleEventClick = () => {
-    setViewEvent(viwEvent)
   }
   // Add Event 
   const handleAddEvent = (e) => {
